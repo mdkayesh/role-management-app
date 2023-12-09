@@ -28,7 +28,7 @@ const UserModal = ({
       onClick={() => setisOpenId("")}
     >
       <div
-        className={`innerModal  relative rounded-lg bg-bg_secondary w-full max-w-lg p-10 flex flex-col items-center h-full overflow-auto ${
+        className={`innerModal relative rounded-lg bg-bg_secondary w-full max-w-lg p-10 flex flex-col items-center h-full max-h-[450px] overflow-auto ${
           isOpenId === user.id.toString() ? "translate-y-0" : "translate-y-3"
         } transition-all duration-300`}
         onClick={(e) => e.stopPropagation()}

@@ -43,7 +43,7 @@ const UsersTable = ({ users, activeUser, setUser }: UsersTableType) => {
                   <td className="p-3">
                     <div className="flex align-items-center">
                       <img
-                        className={`rounded-full h-12 w-12 object-cover ${
+                        className={`rounded-full h-12 w-12 min-h-12 min-w-12 object-cover ${
                           user.id === activeUser.id
                             ? "border-2 border-primary"
                             : ""
